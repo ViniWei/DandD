@@ -1,5 +1,6 @@
 package org.example
 
+import Personagem.CalculadorModificador
 import Personagem.Personagem
 import Personagem.Racas.*
 
@@ -47,42 +48,48 @@ fun adicionarAtributosIniciais(personagem: Personagem) {
     var escolha = readln()
 
     when (escolha.toInt()) {
-        -1 -> return
+        0 -> return
         1 -> {
             if (personagem.administradorAtributosPontos.VerificarAdicaoAtributoEDiminuirPontos(personagem.forca)) {
                 personagem.forca += 1
                 adicionarAtributosIniciais(personagem)
             }
+            adicionarAtributosIniciais(personagem)
         }
         2 -> {
             if (personagem.administradorAtributosPontos.VerificarAdicaoAtributoEDiminuirPontos(personagem.destreza)) {
                 personagem.destreza += 1
                 adicionarAtributosIniciais(personagem)
             }
+            adicionarAtributosIniciais(personagem)
         }
         3 -> {
             if (personagem.administradorAtributosPontos.VerificarAdicaoAtributoEDiminuirPontos(personagem.constituicao)) {
                 personagem.constituicao += 1
                 adicionarAtributosIniciais(personagem)
             }
+            adicionarAtributosIniciais(personagem)
         }
         4 -> {
             if (personagem.administradorAtributosPontos.VerificarAdicaoAtributoEDiminuirPontos(personagem.inteligencia)) {
                 personagem.inteligencia += 1
                 adicionarAtributosIniciais(personagem)
             }
+            adicionarAtributosIniciais(personagem)
         }
         5 -> {
             if (personagem.administradorAtributosPontos.VerificarAdicaoAtributoEDiminuirPontos(personagem.sabedoria)) {
                 personagem.sabedoria += 1
                 adicionarAtributosIniciais(personagem)
             }
+            adicionarAtributosIniciais(personagem)
         }
         6 -> {
             if (personagem.administradorAtributosPontos.VerificarAdicaoAtributoEDiminuirPontos(personagem.carisma)) {
                 personagem.carisma += 1
                 adicionarAtributosIniciais(personagem)
             }
+            adicionarAtributosIniciais(personagem)
         }
         else -> adicionarAtributosIniciais(personagem)
     }
