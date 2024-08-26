@@ -1,3 +1,5 @@
+package Personagem
+
 class AdministradorAtributosPontos {
     var pontos = 27;
 

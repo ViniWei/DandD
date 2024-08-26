@@ -1,6 +1,6 @@
-package Racas
+package Personagem.Racas
 
-import PersonagemAtributos
+import Personagem.PersonagemAtributos
 
 interface Raca {
     fun retornarAtributosAdicionais(): PersonagemAtributos

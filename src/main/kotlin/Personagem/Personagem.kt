@@ -1,10 +1,12 @@
-import Racas.Raca
+package Personagem
 
-class Personagem(var raca: Raca) : PersonagemAtributos(8, 8, 8, 8, 8, 8) {
+import Personagem.Racas.Raca
+
+class Personagem() : PersonagemAtributos(8, 8, 8, 8, 8, 8) {
    var administradorAtributosPontos = AdministradorAtributosPontos();
    private var vida =  0;
 
-   fun iniciarPersonagem() {
+   fun iniciarPersonagem(raca : Raca) {
       val statusBonus = raca.retornarAtributosAdicionais();
       adicionarAtributos(statusBonus)
 

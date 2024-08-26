@@ -1,3 +1,5 @@
+package Personagem
+
 open class PersonagemAtributos(
     var forca: Int,
     var destreza: Int,

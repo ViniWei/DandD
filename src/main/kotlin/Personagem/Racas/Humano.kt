@@ -1,6 +1,6 @@
-package Racas
+package Personagem.Racas
 
-import PersonagemAtributos
+import Personagem.PersonagemAtributos
 
 class Humano : Raca {
     override fun retornarAtributosAdicionais() : PersonagemAtributos {

@@ -1,17 +1,16 @@
-package Racas
+package Personagem.Racas
 
-import PersonagemAtributos
+import Personagem.PersonagemAtributos
 
-class Draconato : Raca {
+class HalflingRobusto : Raca {
     override fun retornarAtributosAdicionais() : PersonagemAtributos {
         return PersonagemAtributos(
-            2,
             0,
             0,
+            1,
             0,
             0,
-            1
+            0
         )
     }
-
 }

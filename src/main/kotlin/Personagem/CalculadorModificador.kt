@@ -1,3 +1,5 @@
+package Personagem
+
 import kotlin.math.ceil
 
 class CalculadorModificador {

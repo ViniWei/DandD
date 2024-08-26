@@ -1,13 +1,13 @@
-package Racas
+package Personagem.Racas
 
-import PersonagemAtributos
+import Personagem.PersonagemAtributos
 
-class GnomoFloresta : Raca {
+class Anao : Raca {
     override fun retornarAtributosAdicionais() : PersonagemAtributos {
         return PersonagemAtributos(
             0,
-            1,
             0,
+            2,
             0,
             0,
             0
