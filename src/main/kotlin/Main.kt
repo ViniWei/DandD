@@ -1,13 +1,12 @@
 package org.example
-import Elfo
+
+import Racas.Draconato
 import Personagem
 
 fun main() {
-    var personagem = Personagem(Elfo());
+    var personagem = Personagem(Draconato());
 
+    personagem.iniciarPersonagem()
 
-}
-
-fun criacaoPersonagem() {
-
+    println(personagem.getVida())
 }
