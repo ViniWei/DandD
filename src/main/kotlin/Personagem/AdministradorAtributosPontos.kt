@@ -24,4 +24,22 @@ class AdministradorAtributosPontos {
 
         return false
     }
+
+    fun VerificarSubtracaoAtributoEaumentarPontos(atributo : Int) : Boolean {
+        if (atributo <= 8) {
+            return false
+        }
+
+        if (atributo <= 13) {
+            this.pontos += 1
+            return true
+        }
+
+        if (atributo <= 15) {
+            this.pontos += 2
+            return true
+        }
+
+        return false
+    }
 }
